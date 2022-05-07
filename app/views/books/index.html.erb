@@ -1,0 +1,51 @@
+<table>
+  <h1 class="table-title">Books</h1>
+
+  <thead>
+    <tr>
+      <th class="table-contents-title">Title</th>
+      <th class="table-contents-body">Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @books.each do |book| %>
+    <tr>
+      <td class="bookers-title"><%= book.title %></td>
+      <td class="bookers-body"><%= book.body %></td>
+      <td class="Links"><%= link_to "Show", book_path(book.id) %></td>
+      <td class="Links"><%= link_to "Edit", edit_book_path(book.id) %></td>
+      <td class="Links"><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %></td>
+    </tr>
+
+  </tbody>
+  <% end %>
+
+</table>
+<div class="text-form">
+  <h2 class="new-logo">New book</h2>
+  <% if @book.errors.any? %>
+    <%= @book.errors.count %>errors prohibited this book from being saved:
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <div class="new-book">
+  <!-- form_with部分 -->
+  <%= form_with model: @book do |f| %>
+    <h4 class="form-text">Title</h4>
+    <%=  f.text_field :title %>
+    <h4 class="form-text">Body</h4>
+    <%= f.text_area :body %>
+
+    <div class="create-button">
+      <%= f.submit 'Create Book' %>
+    </div>
+
+  <% end %>
+  </div>
+</div>

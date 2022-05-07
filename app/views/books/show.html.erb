@@ -1,0 +1,16 @@
+<div class="show">
+
+  <div class="show-contents">
+    <div id ="notice"><%= notice %></div>
+    <p>Title: <%= @book.title %> </p>
+    <p>Body: <%= @book.body %> </p>
+  </div>
+
+<nav>
+  <ul class="nav-list">
+    <li class="nav-list-item"><%= link_to "Edit", edit_book_path(@book.id) %></li>
+    <li class="nav-list-item"><%= link_to "Back", "/books" %></li>
+  </ul>
+</nav>
+
+</div>

@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-title{
+  font-family: verdana;
+  font-weight: bold;
+}
+.top-text{
+  font-family: sans-serif;
+}
+.top-text span{
+  font-family: verdana;
+  font-weight: bold;
+}
+.top-title{
+  padding: 30px 0px 10px 35px;
+}
+.top-text{
+  font-size: 13px;
+  padding: 0px 0px 10px 70px;
+  line-height: 50px;
+}
+.link-to-index{
+  font-size: 13px;
+  padding-left: 70px;
+  color: #000000;
+}
+.table-title{
+  font-family: verdana;
+  font-size: 24px;
+  padding: 20px 0px 10px 30px;
+}
+table{
+  width: 880px;
+  margin-left: 40px;
+}
+.table-contents-title{
+  font-family:verdana;
+  font-size: 13px;
+  font-weight: bold;
+}
+.table-contents-body{
+  font-family: verdana;
+  font-size: 13px;
+  font-weight: bold;
+}
+tbody{
+  font-size: 13px;
+  font-family: sans-serif;
+}
+.new-logo{
+  font-family: verdana;
+}
+.Links{
+  padding: 0 3px;
+}
+.text-form{
+  padding: 20px 0px 10px 30px;
+  display: block;
+}
+.new-logo{
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.form-text{
+  font-size:13px;
+  font-family: verdana;
+  font-weight: lighter;
+}
+.create-button{
+  font-size: 12px;
+  color:#ffffff;
+}
+.editor{
+  padding: 20px 0px 0px 30px;
+  display: block;
+  font-family: verdana;
+}
+.editor-logo{
+  font-size: 24px;
+  font-weight: bold;
+}
+.editor-form{
+  padding-top: 10px;
+  line-height: 25px;
+}
+.editor-title-form{
+  font-size: 13px;
+  font-weight:lighter;
+}
+.editor-body-form{
+  font-size: 13px;
+  font-weight: lighter;
+}
+.show-contents{
+  margin: 40px 0px 0px 70px;
+  display: block;
+  line-height: 50px;
+}
+.show-contents p{
+  font-family: verdana;
+}
+.nav-list{
+  list-style: none;
+  margin: 20px 20px;
+  display: flex;
+}
+.nav-list-item{
+  padding: 0px 8px;
+  font-size:13px;
+}
+.nav-list-item:nth-child(2){
+  padding: 0px 4px;
+  border-left: 1px solid #000000;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
